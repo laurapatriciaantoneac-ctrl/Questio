@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Nuestra Cita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="particles"></div>
+
+<!-- PANTALLA 1: Pregunta -->
+<div class="screen active" id="screen-question">
+    <div class="card">
+        <div class="emoji-big">🐻</div>
+        <h1>¿Quieres salir conmigo?</h1>
+        <p>Prometo risas, comida rica<br>y ser el mejor plan de tu vida ✨</p>
+        <div class="btn-area">
+            <button class="btn-yes" id="yes-btn">Sí ❤️</button>
+            <button class="btn-no" id="no-btn">No 😅</button>
+        </div>
+        <p class="hint" id="hint-text"></p>
+    </div>
+</div>
+
+<!-- PANTALLA 2: Formulario -->
+<div class="screen" id="screen-form">
+    <div class="card">
+        <div class="emoji-big">🥰</div>
+        <h1>¡Sabía que dirías que sí!</h1>
+        <p>Elige cuándo nos vemos 💕</p>
+        <div class="form-group">
+            <label>📅 ¿Qué día?</label>
+            <input type="date" id="date-input">
+        </div>
+        <div class="form-group">
+            <label>⏰ ¿A qué hora?</label>
+            <input type="time" id="time-input">
+        </div>
+        <button class="btn-yes full" id="confirm-btn">Confirmar nuestra cita 💖</button>
+    </div>
+</div>
+
+<!-- PANTALLA 3: Confirmación -->
+<div class="screen" id="screen-success">
+    <div class="card">
+        <div class="emoji-big spin">💍</div>
+        <h1>¡Cita confirmada!</h1>
+        <div class="summary-box">
+            <p id="summary-date">📅 ...</p>
+            <p id="summary-time">⏰ ...</p>
+        </div>
+        <p class="big-text">¡Te estaré esperando! ❤️</p>
+        <p class="small-text">Guarda esta página como recordatorio 😘</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
